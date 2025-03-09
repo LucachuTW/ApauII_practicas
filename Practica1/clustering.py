@@ -57,7 +57,7 @@ X, y_true = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=
 
 # Aplicación de K-Means
 n_clusters = 4
-centroids, labels = kmeans(X, n_clusters, init_method='random_points')
+centroids, labels = kmeans(X, n_clusters, init_method='random_data')
 
 # Visualización de resultados
 plt.scatter(X[:, 0], X[:, 1], c=labels, s=50, cmap='viridis')
